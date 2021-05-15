@@ -85,7 +85,7 @@ function App() {
                 <input type="text" name="desc" placeholder="Description" value={desc} onChange={handleChange}/>
             </div>
             <div className="custom-form-group">
-                <div className={handleHighlight? "custom-file-drop-area hightlight" : "custom-file-drop-area"}
+                <div className={highlight? "custom-file-drop-area hightlight" : "custom-file-drop-area"}
                 onDragEnter={handleHighlight} 
                 onDragOver={handleHighlight} 
                 onDragLeave={handleUnhighlight}
