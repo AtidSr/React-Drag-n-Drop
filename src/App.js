@@ -53,14 +53,12 @@ function App() {
                     <label htmlFor="filephotos">Drag & Drop</label>
                 </div>
                 <div className="custom-file-preview">
-                    <div className="prev-img">
-                        <span>&times;</span>
-                        <img src="https://picsum.photos/id/237/200/300" alt="asd"/>
-                    </div>
-                    <div className="prev-img">
-                        <span>&times;</span>
-                        <img src="https://picsum.photos/id/237/200/300" alt="asd"/>
-                    </div>
+                {photos.length > 0 && photos.map((item, index) => (
+                    <div className="prev-img" key={index} data-imgIndex={index}>
+                      <span>&times;</span>
+                      <img src={item.src} alt={item.name}/>
+                  </div>
+                ))}
                 </div>
             </div>
             <button type="submit" className="btn-submit">Submit</button>
