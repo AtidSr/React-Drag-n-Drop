@@ -44,7 +44,7 @@ a {
   margin-top: 2rem;
 }
 .file-upload::after {
-  content: "😷 😁 👨‍💻";
+  /* content: "😷 😁 👨‍💻"; */
   position: absolute;
   font-size: 5rem;
   top: -18%;
@@ -60,7 +60,9 @@ a {
   -ms-flex-pack: center;
   justify-content: center;
 }
-
+/* .file-upload:hover::after {
+  content: "🤘 😎 🤘";
+} */
 .file-upload h2 {
   font-size: 1.5rem;
   color: #333;
